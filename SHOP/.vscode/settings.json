@@ -1,0 +1,27 @@
+{
+  "git.ignoreLimitWarning": true,
+  "files.exclude": {
+    "__error": "Not found",
+    "application\\cache": true,
+    "application\\core": true,
+    "application\\helpers": true,
+    "application\\hooks": true,
+    "application\\language": true,
+    "application\\libraries": true,
+    "application\\logs": true,
+    "images": true,
+    "system": true,
+    "uploads": true,
+    "user_guide": true,
+    "composer.json": true,
+    "docker-compose.debug.yml": true,
+    "index.php": true,
+    "contributing.md": true,
+    "license.txt": true,
+    ".gitignore": true,
+    "readme.rst": true,
+    ".editorconfig": true,
+    "application\\third_party": true,
+    ".htaccess": true
+  }
+}
