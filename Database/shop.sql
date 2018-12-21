@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 18, 2018 lúc 05:03 AM
+-- Thời gian đã tạo: Th12 21, 2018 lúc 04:01 AM
 -- Phiên bản máy phục vụ: 10.1.34-MariaDB
 -- Phiên bản PHP: 7.2.7
 
@@ -102,9 +102,7 @@ CREATE TABLE `order` (
 --
 
 INSERT INTO `order` (`order_id`, `name`, `phone`, `address`, `total`, `user_id`) VALUES
-(1, 'nam', '111', 'Amsterdam, Hà Lan', 20000, 1),
-(2, 'a', '0000', 'Karnataka, Ấn Độ', 14000, 1),
-(3, 'hoang', '00000', 'Karnataka, Ấn Độ', 7000, 1);
+(1, 'admin', '0123456789', 'HCM city', 38000, 4);
 
 -- --------------------------------------------------------
 
@@ -125,15 +123,8 @@ CREATE TABLE `order_detail` (
 
 INSERT INTO `order_detail` (`order_id`, `id_pd`, `pd_quan`, `pd_price`) VALUES
 (1, 40, '2', '4000'),
-(1, 39, '1', '3000'),
-(1, 33, '4', '5000'),
-(1, 40, '2', '4000'),
-(1, 39, '1', '3000'),
-(1, 35, '3', '3000'),
-(2, 40, '2', '4000'),
-(2, 39, '2', '3000'),
-(3, 40, '1', '4000'),
-(3, 39, '1', '3000');
+(1, 39, '2', '3000'),
+(1, 32, '6', '4000');
 
 -- --------------------------------------------------------
 
@@ -221,9 +212,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `phone`, `password`, `email`) VALUES
-(1, 'nam', '1', 'c4ca4238a0b923820dcc509a6f75849b', 'a@gmail.com'),
-(2, 'test', '111111', 'c4ca4238a0b923820dcc509a6f75849b', 'x@gmail.com'),
-(3, '1', '1', 'c81e728d9d4c2f636f067f89cc14862c', 'a@gmail.com');
+(4, 'admin', '0123456789', '21232f297a57a5a743894a0e4a801fc3', 'admin@gmail.com');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -299,7 +288,7 @@ ALTER TABLE `list_pd`
 -- AUTO_INCREMENT cho bảng `order`
 --
 ALTER TABLE `order`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT cho bảng `partners`
@@ -317,7 +306,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT cho bảng `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Các ràng buộc cho các bảng đã đổ

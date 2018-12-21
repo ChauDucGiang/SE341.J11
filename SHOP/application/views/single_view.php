@@ -81,40 +81,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="col-lg-8 single-right-left simpleCart_shelfItem">
 									<h3><?= $result[0]['pd_name'] ?></h3>
-									<p><span class="item_price"><?= $result[0]['pd_price'] ?> vnđ</span>
-										<del>$1,199</del>
-									</p>
-									<div class="description">
-										<h5>Check delivery, payment options and charges at your location</h5>
-										<form action="#" method="post">
-												<input class="form-control" type="text" name="Email" placeholder="Please enter..." required="">
-											<input type="submit" value="Check">
-										</form>
-									</div>
-									<div class="color-quality">
-										<div class="color-quality-right">
-											<h5>Quality :</h5>
-											<select id="country1" onchange="change_country(this.value)" class="frm-field required sect">
-													<option value="null">5 Qty</option>
-													<option value="null">6 Qty</option> 
-													<option value="null">7 Qty</option>					
-													<option value="null">10 Qty</option>								
-												</select>
-										</div>
-									</div>
-									<div class="occasional">
-										<h5>Types :</h5>
-										<div class="colr ert">
-											<label class="radio"><input type="radio" name="radio" checked=""><i></i> Irayz Butterfly(Black)</label>
-										</div>
-										<div class="colr">
-											<label class="radio"><input type="radio" name="radio"><i></i> Irayz Butterfly (Grey)</label>
-										</div>
-										<div class="colr">
-											<label class="radio"><input type="radio" name="radio"><i></i> Irayz Butterfly (white)</label>
-										</div>
-										<div class="clearfix"> </div>
-									</div>
 									<div class="occasion-cart">
 											<div class="googles single-item singlepage">
 												<form action="#" method="post">

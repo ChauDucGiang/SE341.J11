@@ -471,7 +471,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<button type="submit" class="btn btn-primary submit mb-4">Đăng kí ngay</button>
 						</form>
 						<p class="text-center">
-							<a href="#">Tôi đã có tài khoản</a>
+							<a id="haveuser" href="#">Tôi đã có tài khoản</a>
 						</p>
 					</div>
 				</div>
@@ -483,6 +483,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script>
 		$(document).ready(function () {
 			$("#myModal").modal();
+		});
+		$('#haveusers').click(function (e) { 
+			e.preventDefault();
 		});
 	</script>
 	<!-- // modal -->

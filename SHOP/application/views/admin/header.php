@@ -43,206 +43,6 @@
 			<a href="javascript:void(0);" class="bars"></a>
 			<a class="navbar-brand" href="widgets/../../index.html">QUẢN LÝ WEB</a>
 		</div>
-		<div class="collapse navbar-collapse" id="navbar-collapse">
-			<ul class="nav navbar-nav navbar-right">
-				<!-- Call Search -->
-				<li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
-				<!-- #END# Call Search -->
-				<!-- Notifications -->
-				<li class="dropdown">
-					<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
-						<i class="material-icons">notifications</i>
-						<span class="label-count">7</span>
-					</a>
-					<ul class="dropdown-menu">
-						<li class="header">NOTIFICATIONS</li>
-						<li class="body">
-							<ul class="menu">
-								<li>
-									<a href="javascript:void(0);">
-										<div class="icon-circle bg-light-green">
-											<i class="material-icons">person_add</i>
-										</div>
-										<div class="menu-info">
-											<h4>12 new members joined</h4>
-											<p>
-												<i class="material-icons">access_time</i> 14 mins ago
-											</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">
-										<div class="icon-circle bg-cyan">
-											<i class="material-icons">add_shopping_cart</i>
-										</div>
-										<div class="menu-info">
-											<h4>4 sales made</h4>
-											<p>
-												<i class="material-icons">access_time</i> 22 mins ago
-											</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">
-										<div class="icon-circle bg-red">
-											<i class="material-icons">delete_forever</i>
-										</div>
-										<div class="menu-info">
-											<h4><b>Nancy Doe</b> deleted account</h4>
-											<p>
-												<i class="material-icons">access_time</i> 3 hours ago
-											</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">
-										<div class="icon-circle bg-orange">
-											<i class="material-icons">mode_edit</i>
-										</div>
-										<div class="menu-info">
-											<h4><b>Nancy</b> changed name</h4>
-											<p>
-												<i class="material-icons">access_time</i> 2 hours ago
-											</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">
-										<div class="icon-circle bg-blue-grey">
-											<i class="material-icons">comment</i>
-										</div>
-										<div class="menu-info">
-											<h4><b>John</b> commented your post</h4>
-											<p>
-												<i class="material-icons">access_time</i> 4 hours ago
-											</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">
-										<div class="icon-circle bg-light-green">
-											<i class="material-icons">cached</i>
-										</div>
-										<div class="menu-info">
-											<h4><b>John</b> updated status</h4>
-											<p>
-												<i class="material-icons">access_time</i> 3 hours ago
-											</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">
-										<div class="icon-circle bg-purple">
-											<i class="material-icons">settings</i>
-										</div>
-										<div class="menu-info">
-											<h4>Settings updated</h4>
-											<p>
-												<i class="material-icons">access_time</i> Yesterday
-											</p>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</li>
-						<li class="footer">
-							<a href="javascript:void(0);">View All Notifications</a>
-						</li>
-					</ul>
-				</li>
-				<!-- #END# Notifications -->
-				<!-- Tasks -->
-				<li class="dropdown">
-					<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
-						<i class="material-icons">flag</i>
-						<span class="label-count">9</span>
-					</a>
-					<ul class="dropdown-menu">
-						<li class="header">TASKS</li>
-						<li class="body">
-							<ul class="menu tasks">
-								<li>
-									<a href="javascript:void(0);">
-										<h4>
-											Footer display issue
-											<small>32%</small>
-										</h4>
-										<div class="progress">
-											<div class="progress-bar bg-pink" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
-											 style="width: 32%">
-											</div>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">
-										<h4>
-											Make new buttons
-											<small>45%</small>
-										</h4>
-										<div class="progress">
-											<div class="progress-bar bg-cyan" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
-											 style="width: 45%">
-											</div>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">
-										<h4>
-											Create new dashboard
-											<small>54%</small>
-										</h4>
-										<div class="progress">
-											<div class="progress-bar bg-teal" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
-											 style="width: 54%">
-											</div>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">
-										<h4>
-											Solve transition issue
-											<small>65%</small>
-										</h4>
-										<div class="progress">
-											<div class="progress-bar bg-orange" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
-											 style="width: 65%">
-											</div>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">
-										<h4>
-											Answer GitHub questions
-											<small>92%</small>
-										</h4>
-										<div class="progress">
-											<div class="progress-bar bg-purple" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
-											 style="width: 92%">
-											</div>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</li>
-						<li class="footer">
-							<a href="javascript:void(0);">View All Tasks</a>
-						</li>
-					</ul>
-				</li>
-				<!-- #END# Tasks -->
-				<li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="material-icons">more_vert</i></a></li>
-			</ul>
-		</div>
 	</div>
 </nav>
 <!-- #Top Bar -->
@@ -255,18 +55,14 @@
 				<img src="<?= base_url() ?>asset//images/team4.jpg" width="48" height="48" alt="User" />
 			</div>
 			<div class="info-container">
-				<div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Châu Hoàng</div>
-				<div class="email">chau.ducgiang@gmail.com</div>
+				<div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?= $this->session->userdata('email')?></div>
+				<div class="email"><?= $this->session->userdata('email')?></div>
 				<div class="btn-group user-helper-dropdown">
 					<i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
 					<ul class="dropdown-menu pull-right">
 						<li><a href="javascript:void(0);"><i class="material-icons">person</i>Thông tin</a></li>
 						<li role="separator" class="divider"></li>
-						<li><a href="javascript:void(0);"><i class="material-icons">group</i>Followers</a></li>
-						<li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
-						<li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="javascript:void(0);"><i class="material-icons">input</i>Đăng xuất</a></li>
+						<li><a href="<?= base_url()?>admin/logout"><i class="material-icons">input</i>Đăng xuất</a></li>
 					</ul>
 				</div>
 			</div>
@@ -276,12 +72,6 @@
 		<div class="menu">
 			<ul class="list">
 				<li class="header">MENU</li>
-				<li id="homepage">
-					<a href="../index.html">
-						<i class="material-icons">home</i>
-						<span>Trang chủ</span>
-					</a>
-				</li>
 				<li id="users">
 					<a href="<?= base_url() ?>admin/users">
 						<i class="material-icons">account_circle</i>
@@ -313,6 +103,19 @@
 								<?php endforeach ?>
 							</ul>
 						</li>
+						<li>
+							<a href="javascript:void(0);" class="menu-toggle">
+								<span>Hãng sản xuất</span>
+							</a>
+							<ul class="ml-menu">
+								<?php foreach ($allpartners as $key => $value): ?>
+								<li>
+									<a href="<?=base_url()?>admin/products/<?= $value['id_pn']?>">
+										<?= $value['pn_name']?></a>
+								</li>
+								<?php endforeach ?>
+							</ul>
+						</li>
 					</ul>
 				</li>
 				<li id="banner_slide">
@@ -322,182 +125,15 @@
 					</a>
 				</li>
 				<li>
-					<a href="javascript:void(0);" class="menu-toggle">
+					<a href="<?=base_url()?>admin/loadOrder">
 						<i class="material-icons">view_list</i>
-						<span>Tables</span>
-					</a>
-					<ul class="ml-menu">
-						<li>
-							<a href="../pages/tables/normal-tables.html">Normal Tables</a>
-						</li>
-						<li>
-							<a href="../pages/tables/jquery-datatable.html">Jquery Datatables</a>
-						</li>
-						<li>
-							<a href="../pages/tables/editable-table.html">Editable Tables</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" class="menu-toggle">
-						<i class="material-icons">perm_media</i>
-						<span>Medias</span>
-					</a>
-					<ul class="ml-menu">
-						<li>
-							<a href="../pages/medias/image-gallery.html">Image Gallery</a>
-						</li>
-						<li>
-							<a href="../pages/medias/carousel.html">Carousel</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" class="menu-toggle">
-						<i class="material-icons">pie_chart</i>
-						<span>Charts</span>
-					</a>
-					<ul class="ml-menu">
-						<li>
-							<a href="../pages/charts/morris.html">Morris</a>
-						</li>
-						<li>
-							<a href="../pages/charts/flot.html">Flot</a>
-						</li>
-						<li>
-							<a href="../pages/charts/chartjs.html">ChartJS</a>
-						</li>
-						<li>
-							<a href="../pages/charts/sparkline.html">Sparkline</a>
-						</li>
-						<li>
-							<a href="../pages/charts/jquery-knob.html">Jquery Knob</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" class="menu-toggle">
-						<i class="material-icons">content_copy</i>
-						<span>Example Pages</span>
-					</a>
-					<ul class="ml-menu">
-						<li>
-							<a href="../pages/examples/sign-in.html">Sign In</a>
-						</li>
-						<li>
-							<a href="../pages/examples/sign-up.html">Sign Up</a>
-						</li>
-						<li>
-							<a href="../pages/examples/forgot-password.html">Forgot Password</a>
-						</li>
-						<li>
-							<a href="../pages/examples/blank.html">Blank Page</a>
-						</li>
-						<li>
-							<a href="../pages/examples/404.html">404 - Not Found</a>
-						</li>
-						<li>
-							<a href="../pages/examples/500.html">500 - Server Error</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" class="menu-toggle">
-						<i class="material-icons">map</i>
-						<span>Maps</span>
-					</a>
-					<ul class="ml-menu">
-						<li>
-							<a href="../pages/maps/google.html">Google Map</a>
-						</li>
-						<li>
-							<a href="../pages/maps/yandex.html">YandexMap</a>
-						</li>
-						<li>
-							<a href="../pages/maps/jvectormap.html">jVectorMap</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" class="menu-toggle">
-						<i class="material-icons">trending_down</i>
-						<span>Multi Level Menu</span>
-					</a>
-					<ul class="ml-menu">
-						<li>
-							<a href="javascript:void(0);">
-								<span>Menu Item</span>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:void(0);">
-								<span>Menu Item - 2</span>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:void(0);" class="menu-toggle">
-								<span>Level - 2</span>
-							</a>
-							<ul class="ml-menu">
-								<li>
-									<a href="javascript:void(0);">
-										<span>Menu Item</span>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);" class="menu-toggle">
-										<span>Level - 3</span>
-									</a>
-									<ul class="ml-menu">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Level - 4</span>
-											</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="changelogs.html">
-						<i class="material-icons">update</i>
-						<span>Changelogs</span>
-					</a>
-				</li>
-				<li class="header">LABELS</li>
-				<li>
-					<a href="javascript:void(0);">
-						<i class="material-icons col-red">donut_large</i>
-						<span>Important</span>
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0);">
-						<i class="material-icons col-amber">donut_large</i>
-						<span>Warning</span>
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0);">
-						<i class="material-icons col-light-blue">donut_large</i>
-						<span>Information</span>
+						<span>Đơn hàng</span>
 					</a>
 				</li>
 			</ul>
 		</div>
 		<!-- #Menu -->
 		<!-- Footer -->
-		<div class="legal">
-			<div class="copyright">
-				&copy; 2016 - 2017 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
-			</div>
-			<div class="version">
-				<b>Version: </b> 1.0.5
-			</div>
-		</div>
-		<!-- #Footer -->
 	</aside>
 	<!-- #END# Left Sidebar -->
 	<!-- Right Sidebar -->

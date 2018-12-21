@@ -26,11 +26,14 @@ class Admin extends CI_Controller {
     }
     // load view
     public function load($table , $view){
+        $allpartners =$this->admin_model->getAllPartners();
         $data = $this->admin_model->getAllData($table);
         $listpd = $this->admin_model->getAllData('list_pd');      
         $data = array(
+
             'result' => $data,
-            'listpd' => $listpd
+            'listpd' => $listpd,
+            'allpartners' => $allpartners
          );       
         $this->load->view('admin/'.$view ,$data, false);
     }
@@ -102,13 +105,15 @@ class Admin extends CI_Controller {
          redirect('admin/users','refresh');
     }
     public function deleteuser($id){
-        $this->admin_model->deleteData('users', $id);
+        $this->admin_model->deleteData('users','id', $id);
         redirect('admin/users','refresh');
     }
     // end users
 
     // slides and baner
     public function editbanner(){
+        $allpartners =$this->admin_model->getAllPartners();
+        $listpd = $this->admin_model->getAllData('list_pd');
         $slides =$this->admin_model->getData('banners_slides', 'id', '1')['0']['content'];
         $slides = json_decode($slides, true);
 
@@ -123,6 +128,8 @@ class Admin extends CI_Controller {
 
         //
         $data = array(
+            'allpartners' => $allpartners, 
+            'listpd' => $listpd, 
             'slides' => $slides, 
             'bannertop' => $bannertop, 
             'bannerbot' => $bannerbot,
@@ -260,14 +267,16 @@ class Admin extends CI_Controller {
     }
 
     public function products($id){
+        $allpartners =$this->admin_model->getAllPartners();
         $page = $this->input->post('page');
-        $start = ($page == null) ? 0 : (($page -1 )* 4) ;
+        $start = ($page == null) ? 0 : (($page -1 )* 6) ;
         $partners = $this->admin_model->getPartners();
         $listpd = $this->admin_model->getAllData('list_pd');
         $pd = $this->admin_model->getAllProducts('products', 'pd_lid', $id);
         $products = $this->admin_model->getJoinData($id,$start);
         // $products = $this->admin_model->getProducts('products','pd_lid', $id, $page);
         $data = array(
+            'allpartners' =>  $allpartners,
             'partners' =>  $partners,
             'pd' =>  $pd,
             'listpd' =>  $listpd,
@@ -366,6 +375,66 @@ class Admin extends CI_Controller {
         $this->admin_model->insertData('partners', $data);
     }
     // end partners
+    public function login(){
+        $username = $this->input->post('username');
+        $password = md5($this->input->post('password'));
+
+        $query =$this->admin_model->login_model($username, $password);
+        if ($query)
+            {
+                 foreach($query as $row)
+                 {
+                     $newdata = array(
+                            'id' => $row->id,
+                            'email'   => $row->username,            
+                        );
+                     $this->session->set_userdata($newdata);  
+                     redirect(base_url().'admin/users','refresh');
+                 }
+             return TRUE;
+            }
+            else
+            {
+                $users_err = array(
+                    'title'   => "Đăng nhập không thành công vào hệ thống webste !",
+                    'error_login' => "Email hoặc Mật khẩu nhập sai."
+                    );                                                          
+                $this->load->view('admin/login',$users_err); 
+             return false;   
+            }       
+    }
+    public function logout(){
+        $this->session->unset_userdata('email');
+        redirect(base_url().'admin','refresh');
+    }
+    public function loadOrder(){
+        $allpartners =$this->admin_model->getAllPartners();
+        $listpd = $this->admin_model->getAllData('list_pd');
+        $order = $this->admin_model->loadOrder();
+        $data = array(
+            'allpartners' => $allpartners,
+            'listpd' => $listpd ,
+            'order' => $order 
+        );
+        $this->load->view('admin/order_view', $data, FALSE);
+    }
+
+    public function loadOrderDetail($id){
+        $allpartners =$this->admin_model->getAllPartners();
+        $listpd = $this->admin_model->getAllData('list_pd');
+        $order = array();
+        $orderdetail =$this->admin_model->getData('order_detail', 'order_id', $id);
+        foreach ($orderdetail as $key => $value) {
+            $temp = $this->admin_model->loadOrderDetail($value['id_pd']);
+            array_push($order, $temp);
+        }
+        $data = array(
+            'allpartners' => $allpartners,
+            'listpd' => $listpd ,
+            'order' => $order
+         );
+        $this->load->view('admin/orderdetail_view', $data, FALSE);
+    }
 
 }
 /* End of file Admin.php */

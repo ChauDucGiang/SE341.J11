@@ -1,3 +1,6 @@
+<?php if($this->session->userdata('email') == '') {
+	redirect(base_url().'admin','refresh');
+} else { ?>
 <!DOCTYPE html>
 <html>
 
@@ -593,3 +596,4 @@
 </body>
 
 </html>
+	<?php } ?>

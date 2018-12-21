@@ -70,112 +70,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<div class="clearfix"> </div>
 									</form>
 							</div>
-							<!-- price range -->
-							<div class="range">
-								<h3 class="agileits-sear-head">Giá (nghìn VNĐ)</h3>
-								<ul class="dropdown-menu6">
-									<li>
-										<div id="slider-range"></div>
-										<input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" readonly/>
-									</li>
-								</ul>
-							</div>
-							<!-- //price range -->
-							<!--preference -->
-							<div class="left-side">
-								<h3 class="agileits-sear-head">Mẫu dành cho</h3>
-								<ul>
-									<!-- <li>
-										<span class="span">Nam</span>
-									</li> -->
-									<form>
-										<input type="radio" name="colors" id="red"> Nam <br>
-										<input type="radio" name="colors" id="blue"> Nữ
-									</form>
-									<!-- <li>
-										<input type="radio" class="checked">
-										<span class="span">Nữ</span>
-									</li> -->
-
-								</ul>
-							</div>
-							<!-- // preference -->
-							<!-- discounts -->
-							<div class="left-side">
-								<h3 class="agileits-sear-head">Discount</h3>
-								<ul>
-									<li>
-										<input type="checkbox" class="checked">
-										<span class="span">5% or More</span>
-									</li>
-									<li>
-										<input type="checkbox" class="checked">
-										<span class="span">10% or More</span>
-									</li>
-									<li>
-										<input type="checkbox" class="checked">
-										<span class="span">20% or More</span>
-									</li>
-									<li>
-										<input type="checkbox" class="checked">
-										<span class="span">30% or More</span>
-									</li>
-									<li>
-										<input type="checkbox" class="checked">
-										<span class="span">50% or More</span>
-									</li>
-									<li>
-										<input type="checkbox" class="checked">
-										<span class="span">60% or More</span>
-									</li>
-								</ul>
-							</div>
-							<!-- //discounts -->
-							<!-- deals -->
-							<div class="deal-leftmk left-side">
-								<h3 class="agileits-sear-head">Special Deals</h3>
-								<div class="special-sec1">
-									<div class="img-deals">
-										<img src="images/s1.jpg" alt="">
-									</div>
-									<div class="img-deal1">
-										<h3>Farenheit (Grey)</h3>
-										<a href="single.html">$575.00</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="special-sec1">
-									<div class="col-xs-4 img-deals">
-										<img src="images/s2.jpg" alt="">
-									</div>
-									<div class="col-xs-8 img-deal1">
-										<h3>Opium (Grey)</h3>
-										<a href="single.html">$325.00</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="special-sec1">
-										<div class="col-xs-4 img-deals">
-											<img src="images/m2.jpg" alt="">
-										</div>
-										<div class="col-xs-8 img-deal1">
-											<h3>Azmani Round</h3>
-											<a href="single.html">$725.00</a>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="special-sec1">
-											<div class="col-xs-4 img-deals">
-												<img src="images/m4.jpg" alt="">
-											</div>
-											<div class="col-xs-8 img-deal1">
-												<h3>Farenheit Oval</h3>
-												<a href="single.html">$325.00</a>
-											</div>
-											<div class="clearfix"></div>
-										</div>
-							</div>
-							<!-- //deals -->
 						</div>
 						<!-- //product left -->
 						<!--/product right-->
@@ -188,10 +82,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<h6><?= $value['content'] ?></h6>
 										</div>
 									<?php endforeach ?>
-											<!-- <div class="col-md-6 shop_right">
-												<img src="images/banner4.jpg" alt="">
-												<h6>50% off</h6>
-											</div> -->
 						
 								</div>
 								<form action="" id="myForm" method="POST">
